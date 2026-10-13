@@ -17,7 +17,7 @@
 | **Deliverables** | Analysis notebook, insights deck (PDF) |
 ---
 
-## 1. The Business Problem (in plain words)
+## 1. The Business Problem
 
 A delivery platform launched two features in the same quarter:
 

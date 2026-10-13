@@ -81,4 +81,3 @@ The team needed to know: **did each feature work, and should they keep investing
 ## 8. What to Know Before Using This
 
 - Results are observational, not from a controlled experiment. Both features need an A/B test to prove causation.
-- Figures come from masked data and are shown to demonstrate the method and thinking.

@@ -15,8 +15,6 @@
 | **Role** | Product / Data Analyst |
 | **Tools** | Python (pandas, SciPy, seaborn), Chi-square test, segmentation, matched comparison |
 | **Deliverables** | Analysis notebook, insights deck (PDF) |
-| **Data & Privacy** | Data is masked/changed. Notebook included; raw data not published. |
-
 ---
 
 ## 1. The Business Problem (in plain words)

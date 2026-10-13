@@ -24,7 +24,7 @@
 
 Leadership wanted to understand **employee attrition** in a company of 1,470 employees: **how many people leave, who they are, and what drives them out.** The goal was a dashboard that HR and executives can filter themselves, plus a short set of actions ranked by impact.
 
-![Executive Overview](images/01-executive-overview.png)
+![Executive Overview](01-executive-overview.png)
 
 ## 2. The Short Answer
 
@@ -48,7 +48,7 @@ Leadership wanted to understand **employee attrition** in a company of 1,470 emp
 
 Every page has filters for department, job role, experience level, business travel, overtime and gender, so each reader can look at their own segment.
 
-![Overwork & Travel](images/02-overwork-travel.png)
+![Overwork & Travel](02-overwork-travel.png)
 
 ## 4. Key Insights
 
@@ -72,7 +72,7 @@ Every page has filters for department, job role, experience level, business trav
 1. **Prepared the data in Python:** loaded the source file (1,470 rows, 35 columns), trimmed text, converted Yes/No fields (attrition, overtime) to 1/0, and dropped columns with no analytical value (hourly/daily/monthly rate, employee count, over-18 flag, standard hours).
 2. **Built a star schema:** one fact table (`Fact_Employees`) with six dimension tables (education field, business travel, department, gender, job role, marital status), created with a reusable function.
 
-![Star Schema](images/03-star-schema.png)
+![Star Schema](03-star-schema.png)
 
 3. **Added experience levels:** Junior (under 5 years), Mid (5-9 years), Senior (10+ years), based on total working years.
 4. **Loaded the model into SQL Server and exported it to Excel**, then connected Power BI to it.

@@ -38,11 +38,10 @@ The work covers a weekly dashboard of "North Star" metrics and a deeper analysis
 | App vs website | The app brings 57% of valid leads from only 22% of traffic and converts 4.7x better than the website (0.61% vs 0.13%) |
 | Website traffic | Traffic fell 50% since July while valid leads rose 11%, so more visits did not mean more leads |
 | App lead quality | App valid leads grew 142% since January, but the share qualified after one week fell from 54% to 30% |
-| Reliability | Six data issues limit how far the weekly report can be trusted |
 
 ## 3. The Dashboard
 
-The 29-page PDF version of the dashboard (rebuilt as slides so it is readable) is organized in six sections:
+The 29-page PDF version of the dashboard is organized in six sections:
 
 1. **North Star Metrics:** transactions, traffic, traffic-to-valid-lead rate, and app share of traffic, each shown month-to-date and year-to-date against the previous period.
 2. **Sales Contribution:** listing vs company transactions, with and without personal, ambassador and referral deals, and the split by website, app and landing page.
@@ -63,29 +62,17 @@ The 29-page PDF version of the dashboard (rebuilt as slides so it is readable) i
 - **Android holds the install base but loses it.** Android deleted 70% of May acquisitions compared with 16% on iOS.
 - **Listing leads are worth more.** They reach meetings 1.7x as often as other leads (4.3% vs 2.5%) and qualify slightly better.
 
-## 5. Data Issues Found
-
-A report is only useful if people can trust it, so the analysis lists six issues:
-
-1. Two dashboard sections fail with a dataset configuration error.
-2. The same conversion rate shows different numbers on different pages.
-3. Landing-page traffic is too small to read (leads once reached 136% of traffic).
-4. The time view switches from 4-week blocks to weekly on one date, and some categories were relabeled.
-5. Recent cohorts have not matured, so they show 0% and look like a decline.
-6. The date filters end on different days depending on the page.
-
 ## 6. Recommendations
 
 | # | Action | Priority |
 |---|---|---|
 | 1 | Audit the app's "valid lead" definition and add a qualification gate | High |
 | 2 | Cap the broad paid campaign volume on the website and shift budget to high-intent audiences | High |
-| 3 | Report the old and new app together, and track listing journeys inside the new app | High |
-| 4 | Fix the broken pages, use one conversion definition, and flag immature cohorts | High |
-| 5 | Investigate Android churn and compare lead quality by operating system | Medium |
-| 6 | Set a follow-up standard for listing leads and rebuild listing share through the app | Medium |
+| 3 | Report the old and new app together, and track listing journeys inside the new app | High 
+| 4 | Investigate Android churn and compare lead quality by operating system | Medium |
+| 5 | Set a follow-up standard for listing leads and rebuild listing share through the app | Medium |
 
-**Action plan:** in the next 2 weeks, repair the broken datasets and agree one conversion definition; in 30-60 days, test the campaign cap and audit app lead quality; next quarter, run an Android retention program and a cohort view from valid lead to contraction.
+**Action plan:** in the next 2 weeks, agree one conversion definition; in 30-60 days, test the campaign cap and audit app lead quality; next quarter, run an Android retention program and a cohort view from valid lead to contraction.
 
 **Weekly KPIs to track:** listing share of transactions, valid leads per 1,000 visits, qualification and contraction by channel (matured cohorts only), combined app active users, and the Android deletion ratio.
 
@@ -103,7 +90,6 @@ A report is only useful if people can trust it, so the analysis lists six issues
 
 - **Conflicting numbers.** The same metric appeared with different values on different pages because of different traffic and period definitions, so I traced each one and recommended a single definition.
 - **Cohorts that haven't finished maturing.** Recent weeks showed 0% for four-week outcomes, so I excluded them from trend reads.
-- **A change in granularity.** The report moved from 4-week blocks to weekly partway through, so trends across that date are not like-for-like.
 - **Tiny samples.** Landing-page percentages swung wildly on a few hundred visits, so I treated them as noise.
 - **A moving target.** A new super app launched while I was analyzing, so the old and new app had to be read together.
 
@@ -111,7 +97,7 @@ A report is only useful if people can trust it, so the analysis lists six issues
 
 | File | What it is |
 |---|---|
-| [`Listing_Dashboard.pdf`](reports/Listing_Dashboard.pdf) | 29-page PDF of the Looker Studio dashboard (rebuilt as slides) |
+| [`Listing_Dashboard.pdf`](reports/Listing_Dashboard.pdf) | 29-page PDF of the Looker Studio dashboard |
 | [`Listing_Analysis_Insights_Recommendations.pdf`](reports/Listing_Analysis_Insights_Recommendations.pdf) | Analysis, insights, and recommendations deck |
 
 ## 10. What to Know Before Using This

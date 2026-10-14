@@ -62,7 +62,7 @@ The 29-page PDF version of the dashboard is organized in six sections:
 - **Android holds the install base but loses it.** Android deleted 70% of May acquisitions compared with 16% on iOS.
 - **Listing leads are worth more.** They reach meetings 1.7x as often as other leads (4.3% vs 2.5%) and qualify slightly better.
 
-## 6. Recommendations
+## 5. Recommendations
 
 | # | Action | Priority |
 |---|---|---|
@@ -76,7 +76,7 @@ The 29-page PDF version of the dashboard is organized in six sections:
 
 **Weekly KPIs to track:** listing share of transactions, valid leads per 1,000 visits, qualification and contraction by channel (matured cohorts only), combined app active users, and the Android deletion ratio.
 
-## 7. Approach
+## 6. Approach
 
 1. **Defined the North Star metrics** for the channel: listing share of transactions, traffic, traffic-to-valid-lead rate, and app share of traffic.
 2. **Pulled and combined the data** using SQL for transactions and leads, and GA4 and Mixpanel for web and app traffic and behavior.
@@ -86,21 +86,21 @@ The 29-page PDF version of the dashboard is organized in six sections:
 6. **Audited the report itself** for broken pages, conflicting definitions, and unreliable small samples.
 7. **Wrote the insights deck** with evidence, a metric to watch, and a priority for each action.
 
-## 8. Challenges
+## 7. Challenges
 
 - **Conflicting numbers.** The same metric appeared with different values on different pages because of different traffic and period definitions, so I traced each one and recommended a single definition.
 - **Cohorts that haven't finished maturing.** Recent weeks showed 0% for four-week outcomes, so I excluded them from trend reads.
 - **Tiny samples.** Landing-page percentages swung wildly on a few hundred visits, so I treated them as noise.
 - **A moving target.** A new super app launched while I was analyzing, so the old and new app had to be read together.
 
-## 9. Files
+## 8. Files
 
 | File | What it is |
 |---|---|
 | [`Listing_Dashboard.pdf`](reports/Listing_Dashboard.pdf) | 29-page PDF of the Looker Studio dashboard |
 | [`Listing_Analysis_Insights_Recommendations.pdf`](reports/Listing_Analysis_Insights_Recommendations.pdf) | Analysis, insights, and recommendations deck |
 
-## 10. What to Know Before Using This
+## 9. What to Know Before Using This
 
 - All figures are masked or sample data. The project shows the method and the thinking, and the numbers are not real results.
 - The live Looker Studio dashboard and the SQL, GA4, and Mixpanel queries are not included.

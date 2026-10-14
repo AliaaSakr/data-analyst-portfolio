@@ -14,7 +14,6 @@
 | **Role** | BI Developer / Data Analyst |
 | **Tools** | Power BI (DAX, Power Query) |
 | **Deliverables** | 6-page interactive dashboard (.pbix), insights and recommendations deck (PDF) |
-| **Data & Privacy** | Data is not confidential. Power BI file is included; the source data file is not published. |
 
 ---
 

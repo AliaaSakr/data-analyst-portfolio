@@ -8,6 +8,7 @@
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
 ![PowerPoint](https://img.shields.io/badge/PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white)
 ![Industry](https://img.shields.io/badge/Industry-Human_Resources-blueviolet?style=for-the-badge)
+![Star Schema](https://img.shields.io/badge/Data_Model-Star_Schema-blueviolet?style=for-the-badge)
 
 **Where are we losing employees, why, and what should HR do first?**
 

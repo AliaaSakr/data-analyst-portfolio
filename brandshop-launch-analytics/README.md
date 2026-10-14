@@ -78,6 +78,8 @@ The questions were:
 4. **Reviewed the launch** by period (before and after 1 November), platform, and funnel step.
 5. **Wrote recommendations and targets,** and documented the plan in a measurement plan deck.
 
+![Measurement Plan](images/03measurementplan.png)
+
 ## 7. Challenges
 
 - **A new product with no baseline.** No comparable metrics existed, so I compared the shop against the brand's pages and ads elsewhere on the site.

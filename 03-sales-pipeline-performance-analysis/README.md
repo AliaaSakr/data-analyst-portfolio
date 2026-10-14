@@ -5,7 +5,7 @@
 ![Power Query](https://img.shields.io/badge/Power_Query-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![PowerPoint](https://img.shields.io/badge/PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white)
 ![Industry](https://img.shields.io/badge/Industry-Sales_&_CRM-blueviolet?style=for-the-badge)
-
+![Forecasting](https://img.shields.io/badge/Analysis-Forecasting-blueviolet?style=for-the-badge)
 **The pipeline is growing, so why is only one in four decided deals won?**
 
 | | |

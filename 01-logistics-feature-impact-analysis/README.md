@@ -6,6 +6,7 @@
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![PowerPoint](https://img.shields.io/badge/PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white)
 ![Industry](https://img.shields.io/badge/Industry-Logistics-blueviolet?style=for-the-badge)
+![Statistical Testing](https://img.shields.io/badge/Analysis-Statistical_Testing-blueviolet?style=for-the-badge)
 
 **Did two new features actually work, and who are they working for?**
 

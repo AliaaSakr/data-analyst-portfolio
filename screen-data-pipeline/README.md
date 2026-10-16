@@ -26,6 +26,8 @@ The in-store screen system delivered its logs as **zipped files in a shared fold
 
 Doing this by hand would be slow and easy to get wrong. The files kept arriving, so the process had to be **automatic, repeatable, and safe to re-run**.
 
+![Pipeline Flow](images/01pipelineflow.png)
+
 ## 2. What the Pipeline Does
 
 ```mermaid

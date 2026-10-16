@@ -98,6 +98,8 @@ Because RBR held trusted numbers for every channel, it also powered one-off anal
 
 **Black Friday performance (all channels).** A single page comparing retail branches, the website, the app, and the marketplace: visitors and sessions, conversion, net sales against target, same-store growth, cash sales, the top categories, brands, and branches, and how many orders were placed by account managers on behalf of members.
 
+![Black Friday Performance](images/04blackfriday.png)
+
 **Brand performance analysis.** Prepared before a planned deal with a brand, to show where it stands:
 - It holds about 5.1% of company sales across 19 sub-categories (18,433 units), and 87% of its sales are cash.
 - Four product lines deliver two-thirds of units, but the brand's share is strong in only a few (two lines hold about a third of company sales, while 10 of 19 lines are below 3%).

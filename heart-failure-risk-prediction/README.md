@@ -16,8 +16,8 @@
 | **Industry** | Healthcare analytics |
 | **Role** | Data Science project |
 | **Tools** | Python (pandas, NumPy, scikit-learn, XGBoost, SHAP, matplotlib, seaborn) |
-| **Deliverables** | Analysis notebook, summary deck (PDF) |
-| **Data & Privacy** | A public clinical dataset of 299 heart failure patients. |
+| **Deliverables** | Analysis notebook, summary deck (PowerPoint and PDF) |
+| **Data & Privacy** | A public clinical dataset of 299 heart failure patients. The data file is not published. |
 
 ---
 
@@ -39,7 +39,7 @@ In a clinical setting the two kinds of mistake are not equal. **Missing a high-r
 | Default threshold | The five models caught between 69% and 83% of deaths |
 | After threshold tuning | XGBoost caught 93.1% of deaths with 56.2% precision, the best balance of the models that reached 90% recall |
 | What drives risk | Follow-up time, ejection fraction, and serum creatinine lead the SHAP importance ranking |
-| Fairness | Recall differs by 16.7 points across age groups and 9.1 points between men and women |
+| Fairness | Recall differs by 16.7 points across age groups, though the oldest group has only 7 patients |
 | Readiness | The notebook's own checklist concludes "not fully ready" |
 
 ## 3. What I Built
@@ -48,7 +48,7 @@ In a clinical setting the two kinds of mistake are not equal. **Missing a high-r
 2. **Five models compared:** logistic regression, decision tree, random forest, XGBoost, and gradient boosting.
 3. **Threshold tuning for medical use:** a search for the decision threshold that keeps recall at 90% or higher, then a choice among the models that reach it.
 4. **Explainability with SHAP:** which features drive risk across all patients, and a breakdown of one patient's risk.
-5. **A fairness audit** of recall and precision by age group and gender.
+5. **A fairness audit** of recall and precision by age group.
 6. **Deployment blueprints:** demo versions of data drift monitoring, hospital record integration, and a shadow-mode trial.
 
 ![Threshold Tuning](images/02thresholdtuning.png)
@@ -58,15 +58,15 @@ In a clinical setting the two kinds of mistake are not equal. **Missing a high-r
 - **Accuracy hides the real problem.** The decision tree had only 61% accuracy but the highest recall (83%) at the default threshold. No model at the default threshold caught enough deaths for a clinical use.
 - **Lowering the threshold is the fix.** Four of the five models reached 93% recall once the threshold was tuned. XGBoost did so with the fewest false alarms (56% precision, 74% accuracy).
 - **Kidney function and heart pumping matter.** Serum creatinine and ejection fraction are among the strongest drivers, and older age and shorter follow-up also raise risk.
-- **The model works better for some groups than others.** Recall was 100% for ages 60-80 but 83% for ages 80 and over, and 91% for men against 100% for women, from small groups.
-- **Fairness checks changed the verdict.** The audit flagged bias in both age and gender, which is why the project is not presented as ready for use.
+- **The model works better for some groups than others.** Recall was 100% for ages 60-80, 91% for ages 40-60, and 83% for ages 80 and over, but the oldest group has only 7 patients, so I treated this as a flag and not a verdict.
+- **Fairness checks changed the verdict.** The audit flagged an age-group gap, which is why the project is not presented as ready for use.
 
 ![SHAP Features](images/03shapfeatures.png)
 
 ## 5. Recommendations and Next Steps
 
 1. **Re-test without follow-up time.** It is the top feature, but a doctor would not know it at the time of prediction.
-2. **Close the fairness gaps** with more data for under-represented groups and a re-run of the audit.
+2. **Close the age-group gap** with more data for older patients, and re-run the audit, including a gender check that uses the dataset's real sex column.
 3. **Get more data.** With 299 patients and a 90-patient test set, every figure carries wide uncertainty.
 4. **Validate in practice** with a silent trial alongside doctors before the model influences any decision.
 
@@ -78,7 +78,7 @@ In a clinical setting the two kinds of mistake are not equal. **Missing a high-r
 2. **Prepared it:** a stratified 70/30 split, SMOTE on the training data, and scaling.
 3. **Trained and compared five models** on recall, precision, F1, accuracy, and ROC-AUC.
 4. **Tuned the threshold** for at least 90% recall and picked the model with the best balance.
-5. **Explained and audited:** SHAP importance and single-patient explanations, then recall and precision by age and gender.
+5. **Explained and audited:** SHAP importance and single-patient explanations, then recall and precision by age group.
 6. **Documented a deployment plan** covering drift monitoring, record integration, and a shadow trial.
 
 ## 7. Challenges
@@ -93,9 +93,12 @@ In a clinical setting the two kinds of mistake are not equal. **Missing a high-r
 | File | What it is |
 |---|---|
 | [`heart_failure_risk_prediction.ipynb`](code/heart_failure_risk_prediction.ipynb) | Full analysis: exploration, models, threshold tuning, SHAP, fairness audit |
-| [`Heart_Failure_Risk_Prediction_Summary.pdf`](reports/Heart_Failure_Risk_Prediction_Summary.pdf) | Summary deck |
+| [`Heart_Failure_Risk_Prediction_Summary.pptx`](reports/Heart_Failure_Risk_Prediction_Summary.pptx) | Summary deck |
+| [`Heart_Failure_Risk_Prediction_Summary.pdf`](reports/Heart_Failure_Risk_Prediction_Summary.pdf) | Summary deck as a PDF |
 
 ## 9. What to Know Before Using This
 
+- The notebook also contains gender and ethnicity groups that were generated at random for demonstration, so only the age-group results describe real patients.
 - This is a learning and portfolio project on a small public dataset. It is **not a medical device** and must not be used for clinical decisions.
 - Drift monitoring, hospital record integration, and shadow mode are demonstrations, not live systems.
+- The data file is not published, so the notebook is shown for reference and cannot be re-run as is.

@@ -16,8 +16,8 @@
 | **Industry** | Healthcare analytics |
 | **Role** | Data Science project |
 | **Tools** | Python (pandas, NumPy, scikit-learn, XGBoost, SHAP, matplotlib, seaborn) |
-| **Deliverables** | Analysis notebook, summary deck (PowerPoint and PDF) |
-| **Data & Privacy** | A public clinical dataset of 299 heart failure patients. The data file is not published. |
+| **Deliverables** | Analysis notebook, summary deck |
+| **Data & Privacy** | A public clinical dataset of 299 heart failure patients. |
 
 ---
 
@@ -93,12 +93,10 @@ In a clinical setting the two kinds of mistake are not equal. **Missing a high-r
 | File | What it is |
 |---|---|
 | [`heart_failure_risk_prediction.ipynb`](code/heart_failure_risk_prediction.ipynb) | Full analysis: exploration, models, threshold tuning, SHAP, fairness audit |
-| [`Heart_Failure_Risk_Prediction_Summary.pptx`](reports/Heart_Failure_Risk_Prediction_Summary.pptx) | Summary deck |
-| [`Heart_Failure_Risk_Prediction_Summary.pdf`](reports/Heart_Failure_Risk_Prediction_Summary.pdf) | Summary deck as a PDF |
+| [`Heart_Failure_Risk_Prediction_Summary.pdf`](reports/Heart_Failure_Risk_Prediction_Summary.pdf) | Summary deck |
 
 ## 9. What to Know Before Using This
 
 - The notebook also contains gender and ethnicity groups that were generated at random for demonstration, so only the age-group results describe real patients.
 - This is a learning and portfolio project on a small public dataset. It is **not a medical device** and must not be used for clinical decisions.
 - Drift monitoring, hospital record integration, and shadow mode are demonstrations, not live systems.
-- The data file is not published, so the notebook is shown for reference and cannot be re-run as is.
